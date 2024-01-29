@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustico - Móveis</title>
+    <!--fonte do repositório do google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+
+    <!--ligação com o CSS-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header"> <!--div serve para dividir os conteodos e a class para formatação-->
+        <div class="container">
+            <a href="#">
+                <img src="img/logo-rustico-1.svg" alt="Logo Rustico">
+            </a>
+            <!-- atributo "alt" é fundamental na experiencia do usuário finalidade para leitura de tela para usuário de dificiencia visual -->
+            
+            <!--menu celular-->
+            <div class="btn-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            
+            <nav class="menu">
+                <a href="#">Página Inicial</a>
+                <a href="#somos">Quem Somos</a>
+                <a href="#catalogo">Catálogo</a>
+                <a class="area" href="#areacliente">Área do Cliente</a>
+                <a class="lojas" href="#loja">Nossas lojas</a>
+                <a href="#conosco">Fale Conosco</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section"> <!--hero-section é a pagina inicial-->
+        <div class="container">
+            <div class="content">
+                <h1>A maior rede de móveis rústicos do Brasil</h1>
+                <p>Vivamus accumsan nec quam nec interdum. Donec ac fringlla elit. Fusce et vestibulum nisl. Nam eu
+                    augue in dolor dictum.</p>
+                <a href="#" class="btn">Lorem Ipsum</a>
+            </div>
+
+            <div class="image">
+                <img src="img/cama-rustica.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="nossa-fabrica" id="somos">
+        <div class="container">
+
+            <div class="content">
+                <h2>Da nossa fábrica direto para sua casa!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget metus at neque consectetur rhoncus
+                    ut congue eros. Nulla in orci tortor. Donec consequat, justo quis tempor cursus, nisl turpis feugiat
+                    lectus, ac dapibus neque sapien sit amet odio. Vivamus accumsan nec quam nec interdum.</p>
+                <p>Donec ac fringilla elit. FÚsce et vestibulum nisl. Nam eu augue in dolor dictum venenatis. Ut
+                    vehicula varius vestibulum. Aliquam malesuada tincidunt odio, eget volutpat turpis mollis eu. Nulla
+                    facilisi. Ut turpis neque, cursus eu suscipit in, efficitur vitae libero.</p>
+                <a href="#" class="btn">Leia mais</a>
+            </div>
+
+            <div class="image">
+                <img src="img/armario-rustico.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="madeiras" id="catalogo">
+
+        <div class="container">
+            <h2>Madeiras certificadas</h2>
+            <div class="flex-categorias">
+
+                <article class="categorias">
+                    <div class="image">
+                        <img src="img/Mask Group.jpg" alt="">
+                    </div>
+
+                    <div class="content">
+                        <h3>Nam eu augue in dolor</h3>
+                        <p>Duis commodo odio ut augue tempor iaculis. Proin auctor imperdiet nulla quis finibus. Donec
+                            fringilla rutrum neque non dapibus. Phasellus ultricies</p>
+                        <a href="#" class="btn">Leia mais</a>
+                    </div>
+
+                </article>
+
+                <article class="categorias destaque">
+                    <div class="image">
+                        <img src="img/Mask Group1.jpg" alt="">
+                    </div>
+
+                    <div class="content">
+                        <h3>Nam eu augue in dolor</h3>
+                        <p>Duis commodo odio ut augue tempor iaculis. Proin auctor imperdiet nulla quis finibus. Donec
+                            fringilla rutrum neque non dapibus. Phasellus ultricies</p>
+                        <a href="#" class="btn">Leia mais</a>
+                    </div>
+
+                </article>
+
+                <article class="categorias">
+                    <div class="image">
+                        <img src="img/Mask Group3.jpg" alt="">
+                    </div>
+
+                    <div class="content">
+                        <h3>Nam eu augue in dolor</h3>
+                        <p>Duis commodo odio ut augue tempor iaculis. Proin auctor imperdiet nulla quis finibus. Donec
+                            fringilla rutrum neque non dapibus. Phasellus ultricies</p>
+                        <a href="#" class="btn">Leia mais</a>
+                    </div>
+
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="qualidade">
+        <div class="image">
+            <img src="img/icon.svg" alt="">
+        </div>
+        <h2>Qualidade impecável e preço justo. Recomendo!</h2>
+        <p>João Silva</p>
+    </section>
+
+    <section class="receber" id="conosco">
+        <div class="container">
+            
+                <form>
+                    <div>
+                        <input type="text" placeholder="Informe seu nome" required minlength="3" pattern="^[a-zA-ZÀ-ÖØ-öø-ÿÇç]{3,}\s[a-zA-ZÀ-ÖØ-öø-ÿÇç]{3,}$" title="Digite um nome e um sobrenome com no mínimo 3 caracteres cada.">
+                    </div>
+
+                    <div>
+                        <input type="text" placeholder="Informe seu e-mail">
+                    </div>
+
+                    <div>   
+                        <button class="btn">Receber novidades</button>
+                    </div>
+                    
+                </form>
+        
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit. Sed eget metus at neque consectetur rhoncus
+                    ut congue eros.</p>
+            </div>
+
+            <div>
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit. Sed eget metus at neque consectetur rhoncus
+                    ut congue eros.</p>
+            </div>
+
+            <div>
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit. Sed eget metus at neque consectetur rhoncus
+                    ut congue eros.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!--Ligação entre HTML e JS-->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

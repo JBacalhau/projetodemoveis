@@ -1,0 +1,470 @@
+:root{
+    --cor1: #473C38;
+    --cor2: #C2B19C;
+    --cor3: #F0F1F0; 
+    --cor4: #B2935B;
+    --white: #FFFFFF;
+}
+
+
+html{
+    /*faz com que a navegação em âncora fique suave*/
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;/*esconde a barra de rolagem horixontal*/
+}
+
+img{
+    display: block;
+}
+
+a{
+    text-decoration: none;/* retirando o sublinhado dos links*/
+    font-family: 'Playfair Display', serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    font-weight: 400;
+    font-family: "Playfair Display";
+
+}
+
+h2{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+.container{
+    width: 100%;
+    max-width: 1151px;
+    padding-left: 15px;/*para aplicar nos tabletes e celolares*/
+    padding-right: 15px;/*para aplicar nos tabletes e celolares*/
+    box-sizing: border-box;
+    /*centralizar o container*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+    background-color: var(--white);
+    width: 100%; /*largura*/
+    height: auto; /* altura*/
+
+    /*espaçamento interno*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: sticky;/* fixa o cabeçalho*/
+    top: 0;/* para começar a rolar no 0*/
+    z-index: 1000;
+}
+
+.header .container{
+    /*FLEXBOX: Conjunto de propriedades CSS para organização de LAYOUY*/
+    display: flex;
+    align-items: center;/*alinhamento vertical*/
+    justify-content: space-between;/* alinhamento horizontal*/
+}
+
+.menu a{
+    color: var(--cor1);
+    margin-left: 66px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.lojas{
+    display: none;
+}
+
+.menu a:hover{
+    text-decoration: underline var(--cor1);
+}
+
+.hero-section{
+    padding-top: 127px;
+    padding-bottom: 128px;
+    background-color: var(--cor1);
+    
+}
+
+.hero-section .container{    
+    background-color: var(--cor1);
+    display: flex;
+    align-items: center;
+    column-gap: 110px;
+}
+
+.hero-section .content{
+    color: var(--white);
+}
+
+.hero-section h1{
+    font-size: 60px;
+    line-height: 100%;
+}
+
+.hero-section p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    width: 450px;
+}
+
+.btn{
+    display: inline-block;
+    color: var(--cor1);
+    background-color: var(--cor2);
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 15px 52px 14px 51px; /*aumentando o botão - top right bottom left, no Sentido dos ponteiros do relógio*/  
+    line-height: 18px;
+    cursor: pointer;/*cursor do mouse fica todo igual*/
+}
+
+
+.nossa-fabrica{    
+    background-color: var(--white);
+}
+
+.nossa-fabrica .content{
+    max-width: 641px;
+    
+}
+
+.nossa-fabrica .container{
+    background-color: var(--white);
+    display: flex;
+    
+    column-gap: 123px;
+    padding-top: 100px;
+    padding-bottom: 102px;
+    align-items: center;
+}
+
+.nossa-fabrica p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #666;
+}
+
+.nossa-fabrica .btn{
+    background-color: var(--cor1);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--cor3);
+    padding: 5px 26px 6px 25px;
+}
+.madeiras{
+    background: var(--cor3);
+}
+
+.madeiras .container{
+    background: var(--cor3);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.madeiras h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.flex-categorias{
+    background-color: var(--cor3);
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.categorias{
+    border-radius: 5px;
+    padding: 30px;
+    background-color: #FAFAFA;
+    box-shadow: 3px 3px 10px 0px rgba(204, 204, 204, 0.25);
+}
+
+.destaque{
+    border-radius: 4px;
+    background-color: var(--white)
+}
+
+.categorias p{
+    width: 280px;
+    color: #666;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.categorias h3{
+    margin-top: 8px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--cor1);
+
+}
+
+.categorias .btn{
+    display: block;
+    line-height: 24px;
+    padding: 3px 60px 3px 58px;
+    background-color: var(--cor1);
+    color: var(--cor3);
+    text-align: center;
+}
+
+.qualidade{
+    margin-top: 48px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.qualidade h2{
+    color: var(--cor1);
+}
+
+.qualidade p{
+    color: #666;
+    line-height: 130%;
+}
+
+.qualidade .image{
+    display: flex;
+    justify-content: center;
+}
+
+.receber{
+    background-color: var(--cor2);  
+}
+
+.receber .container{    
+    padding-top: 63px;
+    padding-bottom: 62px;    
+}
+
+.receber form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.receber .btn{
+    padding: 5px 13px 5px 13px;
+    background-color: var(--cor1);
+    color: var(--cor3);
+    font-size: 16px;   
+    border: none;
+}
+
+.receber input{
+    width: 451px;
+    font-size: 16px;
+    height: 30px;
+    background-color: var(--cor3);
+    color: #666;
+    border: none;
+    box-sizing: border-box;
+    padding-left: 10px;
+    /*float: left;*/
+    
+}
+
+.footer{
+    background-color: var(--cor1);
+    
+}
+
+.footer .container{
+    display: flex;
+    column-gap: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer h2{
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--white);
+    display: inline-block;
+}
+
+.footer p{  
+    color: var(--cor3);
+    line-height: 130%;
+    display: inline-block;
+}
+    /*MEDIA QUERIES*/
+
+/*Para larguras de até 800*/
+
+@media(max-width: 1146px){
+
+    .receber form{
+        flex-direction: column;
+        row-gap: 13px;
+    }
+
+}
+
+@media(max-width: 1050px){
+    .flex-categorias{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+}
+
+@media(max-width: 970px){
+    .menu{
+        /*display: none;*/
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(0);
+        background-color: var(--cor4);
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 100px);
+        transition: 0.3s ease-in-out;
+        
+    }
+        
+       .menu-open{
+        /*display: block;*/
+        opacity: 1;
+        pointer-events: all;
+        transform: translateY(0);
+    }
+
+    .menu a{
+        display: block;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1.02px solid var(--cor1);
+    }
+
+    .menu .area{
+        display: none;
+
+    }
+
+    .bar{
+        width: 40px;
+        height: 3px;
+        background-color: var(--white);
+        margin-bottom: 3px;
+        transition: 0.3s;
+    }
+
+     /*bar que for o primeiro filho*/
+    .x .bar:first-child{
+        transform: rotate(45deg) translate(7px, 4px);
+    }
+    /* bar que for o filho de número 2*/
+    .x .bar:nth-child(2){
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    /*bar que for o último filho*/
+    .x .bar:last-child{
+        transform: rotate(-45deg) translate(4px, -2px);
+    }
+
+    /*ao clicar*/
+    
+
+    .bar{
+        width: 40px;
+        height: 3px;
+        background-color: var(--cor1);
+        margin-bottom: 3px;
+    }
+
+    .hero-section img{
+        width: 264px;
+    }
+    
+    .hero-section{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .qualidade h2{
+        font-size: 24px;
+    }
+
+    .receber .container{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 13px;
+    }
+
+    .footer .container{
+        padding-top: 81px;
+        padding-bottom: 80px;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+}
+
+@media (max-width: 845px){
+    .hero-section .container{
+        flex-direction: column;
+        row-gap: 40px;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-section h1{
+        font-size: 32px;
+    }
+    .hero-section p{
+        font-size: 16px;
+        width: 100%;
+    }
+    .hero-section img{
+        max-width: 100%;
+    }
+
+    .nossa-fabrica .container h2{
+        font-size: 28px;
+        width: 100%;    
+    }
+
+    .nossa-fabrica .container p{
+        font-size: 16px;
+    }
+
+    .madeiras h2{
+        font-size: 28px;
+    }
+
+
+    
+}
+
+@media (max-width: 809px){
+    .nossa-fabrica .image{
+        display: none;
+    }
+
+    .nossa-fabrica .container .content{
+        max-width: 100%;
+    }
+}
