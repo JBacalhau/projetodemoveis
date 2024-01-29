@@ -266,6 +266,7 @@ h2{
 }
 
 .receber input{
+    max-width: 100%;
     width: 451px;
     font-size: 16px;
     height: 30px;
